@@ -3,9 +3,8 @@ package com.kodilla.stream.book;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookDirectory {
+public final class BookDirectory {
     private final List<Book> theBookList = new ArrayList<>();
-
     public BookDirectory() {
         theBookList.add(new Book ("Dylan Murphy", "Wolf of the mountains", 2003, "0001" ));
         theBookList.add(new Book ("Phoebe Pearson", "Slaves of dreams", 2012, "0002" ));
