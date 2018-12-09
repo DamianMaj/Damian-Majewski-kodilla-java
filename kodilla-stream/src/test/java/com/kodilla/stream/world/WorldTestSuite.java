@@ -23,12 +23,16 @@ public class WorldTestSuite {
         africa.addCountry(rpa);
         asia.addCountry(china);
         northAmerica.addCountry(usa);
+        world.addContinent(europe);
+        world.addContinent(africa);
+        world.addContinent(asia);
+        world.addContinent(northAmerica);
 
         //When
         BigDecimal totalPeopleQuantity = world.getPeopleQuantity();
 
         //Then
-        Assert.assertEquals(new BigDecimal("67891234567123"), totalPeopleQuantity);
+        Assert.assertEquals(new BigDecimal("123456789"), totalPeopleQuantity);
 
     }
 }
