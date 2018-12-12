@@ -11,10 +11,11 @@ public class ExceptionHandling {
            System.out.println("result" + result);
 
         } catch (Exception e) {
-            System.out.println(" X has to be between 1.0 and 2.0 and y has to be other than 1.5");
+            System.out.println(" X has to be between 1.0 and 2.0 and Y has to be other than 1.5");
+            System.out.println();
         }
         finally {
-            System.out.println(result);
+            System.out.println("This is the end of operation");
         }
     }
 }
